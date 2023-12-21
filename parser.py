@@ -1,8 +1,12 @@
 import json
 import requests
 from random import *
+from secret.py import load_keys
+
+load_keys()
+
 headers={
-    'X-API-KEY':'H5VGER9-1SD4QN7-K3VS63Y-4R3GB9T'
+    'X-API-KEY':header
 }
 def rand_mov(ganre):
     page = randint(1,200)

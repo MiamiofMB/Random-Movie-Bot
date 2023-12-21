@@ -7,6 +7,9 @@ from aiogram.dispatcher.filters.state import State, StatesGroup
 from secret import load_keys
 
 load_keys()
+
+token = token
+
 bot = Bot(token=token)
 dp = Dispatcher(bot)
 

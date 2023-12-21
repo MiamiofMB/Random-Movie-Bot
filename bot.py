@@ -4,12 +4,9 @@ from parser import rand_mov
 from aiogram.types import Message
 from aiogram.dispatcher import FSMContext
 from aiogram.dispatcher.filters.state import State, StatesGroup
-from secret import load_keys
+from secret import Load
 
-load_keys()
-
-token = token
-
+token = Load.token()
 bot = Bot(token=token)
 dp = Dispatcher(bot)
 
